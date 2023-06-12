@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
+import Button from "./Components/Button";
+import Footer from "./Components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div>
+            <Header />
+
+            <Button btnText="Apple" color="red" />
+
+            <Button btnText="Mango" color="yellow" />
+
+            {/* Button with props and children ie p tag */}
+            <Button btnText="Banana" color="green">
+                <p>lorem ipsum dolor sit amet</p>
+                <p>lorem ipsum dolor sit amet</p>
+            </Button>
+
+            <Footer />
+        </div>
+    )
 }
 
 export default App;
+
+
+// function Hello1(){
+//     return (
+//         <div>
+//             <h1>Hello Guys, how are you 1</h1>
+//             <p>lorem ipsum dolor sit amet 1</p>
+//        </div>
+
+//     )
+// }
+
+
+// function xyz(){
+
+// }
+
+// abc = xyz 
+
+// xyz() 
+// abc()
+
+
+// <>
